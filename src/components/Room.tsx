@@ -1,3 +1,4 @@
+// EDIT MONITOR IAMGE (screentxt)
 import { useGLTF, useTexture } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
 import * as THREE from 'three';
@@ -43,12 +44,12 @@ export default function HackerRoom(props: HackerRoomProps) {
   const { nodes, materials } = useGLTF('/models/hacker-room.glb') as GLTFResult;
 
   const monitortxt = useTexture('textures/desk/monitor.png');
-  const screenTxt = useTexture('textures/desk/screen.png');
+  // const screenTxt = useTexture('textures/desk/screen.png');
 
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.screen_screens_0.geometry} material={materials.screens}>
-        <meshMatcapMaterial map={screenTxt} />
+        {/* <meshMatcapMaterial map={screenTxt} /> */}
       </mesh>
       <mesh geometry={nodes.screen_glass_glass_0.geometry} material={materials.glass} />
       <mesh geometry={nodes.table_table_mat_0_1.geometry} material={materials.table_mat} />
