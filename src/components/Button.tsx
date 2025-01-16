@@ -1,7 +1,7 @@
 interface ButtonProps {
   text: string;
-  isBeam: boolean;
-  containerClass: string;
+  isBeam?: boolean;
+  containerClass?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ text, isBeam = false, containerClass }) => {
