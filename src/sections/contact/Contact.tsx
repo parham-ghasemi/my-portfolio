@@ -1,4 +1,4 @@
-import { LegacyRef, useRef, useState } from "react"
+import { useRef, useState } from "react"
 import * as emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import MacTerminal from "../../components/MacTerminal";
